@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="616" height="616" viewBox="0 0 616 616">
+  <g id="Hero_Section" data-name="Hero Section" transform="translate(-948 -295)">
+    <rect id="Rectangle_4" data-name="Rectangle 4" width="154" height="154" rx="20" transform="translate(1256 295)" fill="#6e00ff"/>
+    <rect id="Rectangle_9" data-name="Rectangle 9" width="154" height="154" rx="20" transform="translate(1256 653)" fill="#6e00ff"/>
+    <rect id="Rectangle_13" data-name="Rectangle 13" width="154" height="154" rx="20" transform="translate(1256 636)" fill="#6e00ff"/>
+    <rect id="Rectangle_6" data-name="Rectangle 6" width="154" height="154" rx="20" transform="translate(1410 449)" fill="#6e00ff" opacity="0.28"/>
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="154" height="154" rx="20" transform="translate(1102 449)" fill="#fff"/>
+    <rect id="Rectangle_7" data-name="Rectangle 7" width="154" height="154" rx="20" transform="translate(1102 449)" fill="#fff"/>
+    <rect id="Rectangle_10" data-name="Rectangle 10" width="154" height="154" rx="20" transform="translate(1102 757)" fill="#fff"/>
+    <rect id="Rectangle_8" data-name="Rectangle 8" width="154" height="154" rx="20" transform="translate(948 603)" fill="#fff" opacity="0.24"/>
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="77" cy="77" r="77" transform="translate(1256 449)" fill="#ff64cb"/>
+    <circle id="Ellipse_7" data-name="Ellipse 7" cx="77" cy="77" r="77" transform="translate(1102 603)" fill="#00e8ff"/>
+  </g>
+</svg>
