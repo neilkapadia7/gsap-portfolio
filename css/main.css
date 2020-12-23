@@ -265,6 +265,7 @@ section {
     margin: unset;
   }
   .hero-design {
+    z-index: 1;
     display: unset;
     margin-left: -50%;
     margin-top: 12%;
