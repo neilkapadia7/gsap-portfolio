@@ -32,12 +32,12 @@
 
     <div class="hero">
         <div class="content">
-            <h1>Beautifully Crafted Web Experiences</h1>
-            <div class="meet">
+            <h1 class="stagger1">Beautifully Crafted Web Experiences</h1>
+            <div class="meet stagger1">
                 <span>&#128071;</span>
                 <p>Meet Neil Kapadia</p>
             </div>
-            <svg class='scroll' width="35" height="58" viewBox="0 0 35 58">
+            <svg class='scroll stagger1' width="35" height="58" viewBox="0 0 35 58">
                 <g id="scroll" transform="translate(-242 -709)">
                   <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(242 709)" fill="none" stroke="#fff" stroke-width="5">
                     <rect width="35" height="58" rx="17.5" stroke="none"/>
@@ -81,21 +81,21 @@
     <section class="skills">
         <div class="skills-container">
         <ul>
-            <li class="tranition2">
+            <li class="transition1">
                 <div class="icon-container one">
                     <img src="images/Icon-ux.svg" alt="UI/UX Icon">
                 </div>
                 <p class="skill-title">UI UX Design</p>
                 <p class="featured-desc skill-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </li> 
-            <li class="tranition2">
+            <li class="transition1">
                 <div class="icon-container one">
                     <img src="images/Icon-ux.svg" alt="UI/UX Icon">
                 </div>
                 <p class="skill-title">FrontEnd Development</p>
                 <p class="featured-desc skill-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </li> 
-            <li class="tranition2">
+            <li class="transition1">
                 <div class="icon-container one">
                     <img src="images/Icon-ux.svg" alt="UI/UX Icon">
                 </div>
@@ -140,5 +140,73 @@
             <a href="#"><img src="images/fretty.jpg" alt="fretty"></a> 
         </div>
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        var tl1 = gsap.timeline();
+
+        tl1.from('.content', {
+            y: '-30%',
+            opacity: 0, 
+            duration: 2,
+            ease: Power4.easeOut
+        })
+
+        tl1.from('.stagger1', {
+            opacity: 0,
+            y: '-30%',
+            stagger: .5,
+            ease: Power4.easeOut,
+            duration: 2
+        }, "-=1.4")
+
+        tl1.from('.hero-design', {
+            opacity: 0, y: 50, ease: Power4.easeOut, duration: 1
+        }, "-=2")
+
+        gsap.from(".square-anim", {
+            stagger: .2,
+            scale: 0.1,
+            duration: 1,
+            ease: Back.easeOut.config(1.7)
+        })
+
+        gsap.from(".transition1", {
+            scrollTrigger: {
+                trigger: '.transition1',
+                start: "bottom bottom"
+            },
+            y: 60,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .4
+        })
+
+        gsap.from(".transition2", {
+            scrollTrigger: {
+                trigger: '.transition2',
+                start: "center bottom"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .3
+        })
+
+        gsap.from(".transition3", {
+            scrollTrigger: {
+                trigger: ".transition3",
+                start: "top center"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .6
+        });
+    </script>
+
 </body>
 </html>
